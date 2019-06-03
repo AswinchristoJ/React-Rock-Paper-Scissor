@@ -12,10 +12,6 @@ class App extends Component {
     bot: 'botRock',
     player: 'playerRock',
   }
-  // componentDidUpdate(prevProps, prevState) {
-
-  //   console.log("mounted",prevState.spin,this.state.spin)
-  // }
 
   userControlClickHandler = (value) => {
 
@@ -24,12 +20,18 @@ class App extends Component {
       spin: !prevSpinState
     })
 
+    let items = ["Rock", "Paper", "Scissor"]
     let tempPlayerState = 'player'
+    let tempBotState = items[Math.floor(Math.random() * items.length)]
 
     tempPlayerState = tempPlayerState + value
-
+    tempBotState = "bot"+tempBotState
+    
     if (value) {
-      this.setState({ player: tempPlayerState })
+      this.setState({
+        player: tempPlayerState,
+        bot: tempBotState
+      })
     }
   }
 
