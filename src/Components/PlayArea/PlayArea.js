@@ -6,12 +6,12 @@ const playArea = () =>{
     return(
         <div style={{
             display:"flex",
-            alignContent:"center",
+            alignItems:"center",
             justifyContent:"space-around"
         }}>
-            <Handholder/>
+            <Handholder hand="botRock"/>
             <p>vs</p>
-            <Handholder/>
+            <Handholder hand="playerRock"/>
         </div>
     );
 }
