@@ -6,12 +6,13 @@ const playArea = (props) =>{
     return(
         <div style={{
             display:"flex",
-            alignItems:"center",
+            height:"40vh",
+            alignItems:"flex-start",
             justifyContent:"space-around"
         }}>
-            <Handholder spin={props.spin} hand={props.bot}/>
+            <Handholder header="BOT" spin={props.spin} hand={props.bot}/>
             <p>vs</p>
-            <Handholder spin={props.spin} hand={props.player}/>
+            <Handholder header="YOU" spin={props.spin} hand={props.player}/>
         </div>
     );
 }

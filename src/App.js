@@ -26,7 +26,7 @@ class App extends Component {
 
     tempPlayerState = tempPlayerState + value
     tempBotState = "bot"+tempBotState
-    
+
     if (value) {
       this.setState({
         player: tempPlayerState,
@@ -45,9 +45,7 @@ class App extends Component {
           spin={this.state.spin}
           bot={this.state.bot}
           player={this.state.player} />
-        <div style={{
-          margin: "20px"
-        }}>
+        <div>
           <UserControls value="Rock" clicked={this.userControlClickHandler} />
           <UserControls value="Paper" clicked={this.userControlClickHandler} />
           <UserControls value="Scissor" clicked={this.userControlClickHandler} />

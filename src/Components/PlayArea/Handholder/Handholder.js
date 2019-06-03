@@ -21,22 +21,26 @@ const images = {
 const handHolder = (props) => {
 
     let tempClassName = ''
-    
-    if(props.spin){
+
+    if (props.spin) {
         tempClassName = "image"
-    }else{
+    } else {
         tempClassName = ''
     }
-    
+
     return (
         <div style={{
             height: "5rem",
             width: "5rem",
         }} >
+        <div style={{
+            margin:"20px",
+            fontWeight:"bolder"
+        }}>{props.header}</div>
             <img className={tempClassName} src={images[props.hand]} alt={props.hand} style={{
-                objectFit:"scale-down",
-                height:"inherit"
-            }}  />
+                objectFit: "scale-down",
+                height: "inherit"
+            }} />
         </div>
     );
 }
