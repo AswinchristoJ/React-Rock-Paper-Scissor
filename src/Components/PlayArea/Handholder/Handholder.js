@@ -19,11 +19,13 @@ const images = {
 const handHolder = (props) => {
     return (
         <div style={{
-            height: "300px",
-            width: "300px",
-            objectFit: "contain"
+            height: "5rem",
+            width: "5rem",
         }} >
-            <img src={images[props.hand]} alt={props.hand} height="300px" />
+            <img src={images[props.hand]} alt={props.hand} style={{
+                objectFit:"scale-down",
+                height:"inherit"
+            }}  />
         </div>
     );
 }
