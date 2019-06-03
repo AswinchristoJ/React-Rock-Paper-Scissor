@@ -9,9 +9,9 @@ const playArea = (props) =>{
             alignItems:"center",
             justifyContent:"space-around"
         }}>
-            <Handholder spin={props.spin} hand="botRock"/>
+            <Handholder spin={props.spin} hand={props.bot}/>
             <p>vs</p>
-            <Handholder spin={props.spin} hand="playerRock"/>
+            <Handholder spin={props.spin} hand={props.player}/>
         </div>
     );
 }

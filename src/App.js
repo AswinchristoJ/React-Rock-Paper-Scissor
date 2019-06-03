@@ -8,14 +8,29 @@ import './App.css';
 class App extends Component {
 
   state = {
-    spin: false
+    spin: false,
+    bot: 'botRock',
+    player: 'playerRock',
   }
+  // componentDidUpdate(prevProps, prevState) {
 
-  userControlClickHandler = () => {
+  //   console.log("mounted",prevState.spin,this.state.spin)
+  // }
+
+  userControlClickHandler = (value) => {
+
     let prevSpinState = this.state.spin
     this.setState({
       spin: !prevSpinState
     })
+
+    let tempPlayerState = 'player'
+
+    tempPlayerState = tempPlayerState + value
+
+    if (value) {
+      this.setState({ player: tempPlayerState })
+    }
   }
 
   render() {
@@ -24,7 +39,10 @@ class App extends Component {
       <div className="App">
         <h3>Rock-Paper-Scissor</h3>
         <h2>Score</h2>
-        <PlayArea spin={this.state.spin} />
+        <PlayArea
+          spin={this.state.spin}
+          bot={this.state.bot}
+          player={this.state.player} />
         <div style={{
           margin: "20px"
         }}>

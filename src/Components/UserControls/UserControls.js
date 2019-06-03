@@ -9,8 +9,8 @@ const userControls = (props) =>{
             padding:"10px",
             margin:"2px"
         }} 
-        onFocus={props.clicked}
-        onBlur={props.clicked}>{props.value}</button>
+        onFocus={()=>props.clicked(props.value)}
+        onBlur={()=>props.clicked(null)}>{props.value}</button>
     );
 }
 
