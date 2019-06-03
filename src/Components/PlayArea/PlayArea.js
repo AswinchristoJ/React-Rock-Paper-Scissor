@@ -2,16 +2,16 @@ import React from 'react';
 
 import Handholder from './Handholder/Handholder';
 
-const playArea = () =>{
+const playArea = (props) =>{
     return(
         <div style={{
             display:"flex",
             alignItems:"center",
             justifyContent:"space-around"
         }}>
-            <Handholder hand="botRock"/>
+            <Handholder spin={props.spin} hand="botRock"/>
             <p>vs</p>
-            <Handholder hand="playerRock"/>
+            <Handholder spin={props.spin} hand="playerRock"/>
         </div>
     );
 }
