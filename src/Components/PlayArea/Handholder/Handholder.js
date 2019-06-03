@@ -7,6 +7,8 @@ import playerRockImg from '../../../assets/images/playerRock.png'
 import playerPaperImg from '../../../assets/images/playerPaper.png'
 import playerScissorImg from '../../../assets/images/playerScissor.png'
 
+import './Handholder.css';
+
 const images = {
     botPaper: botPaperImg,
     botRock: botRockImg,
@@ -17,12 +19,21 @@ const images = {
 }
 
 const handHolder = (props) => {
+
+    let tempClassName = ''
+    
+    if(props.spin){
+        tempClassName = "image"
+    }else{
+        tempClassName = ''
+    }
+    
     return (
         <div style={{
             height: "5rem",
             width: "5rem",
         }} >
-            <img src={images[props.hand]} alt={props.hand} style={{
+            <img className={tempClassName} src={images[props.hand]} alt={props.hand} style={{
                 objectFit:"scale-down",
                 height:"inherit"
             }}  />
