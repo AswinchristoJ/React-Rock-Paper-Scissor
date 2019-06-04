@@ -82,13 +82,13 @@ class App extends Component {
   checkClose = () => {
     let closeText = ""
     if (this.state.botScore === 5 && this.state.playerScore === 5) {
-      closeText = "The game is drawn"
+      closeText = "The game is <<Drawn>>!!!"
       this.close(closeText)
     } else if (this.state.botScore === 5) {
-      closeText = "You Lose...\nthis time"
+      closeText = "You Lose!!!...\nthis time"
       this.close(closeText)
     } else if (this.state.playerScore === 5) {
-      closeText = "You Won!!!.....\nHurrAy!"
+      closeText = "You Won!!!.....\nHurraY!"
       this.close(closeText)
     }
   }
