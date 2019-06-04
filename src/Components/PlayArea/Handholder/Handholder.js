@@ -30,11 +30,11 @@ const handHolder = (props) => {
 
     return (
         <div style={{
-            width: "30vw",
+            width: "25vw",
         }} >
         <div style={{
             margin:"20px",
-            fontWeight:"bolder"
+            fontWeight:"bolder",
         }}>{props.header}</div>
             <img className={tempClassName} src={images[props.hand]} alt={props.hand} style={{
                 objectFit: "scale-down",

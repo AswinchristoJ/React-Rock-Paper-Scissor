@@ -6,11 +6,11 @@ const scoreArea = (props) => {
     let botTempClass = ""
     let playerTempClass = ""
 
-    let styles={
-        fontSize:"xx-large",
-        color:"blue"
+    const styles = {
+        fontSize: "xx-large",
+        color: "blue"
     }
-    
+
     if (props.botFaded && props.playerFaded) {
         botTempClass = "fadeIn"
         playerTempClass = "fadeIn"
@@ -18,7 +18,7 @@ const scoreArea = (props) => {
         botTempClass = "fadeIn"
     } else if (props.playerFaded) {
         playerTempClass = "fadeIn"
-    }else{
+    } else {
         botTempClass = ""
         playerTempClass = ""
     }
@@ -34,8 +34,20 @@ const scoreArea = (props) => {
             margin: "0px",
             padding: "20px 10px"
         }}>
-            <div><span>Score : <label style={styles} className={botTempClass}>{props.botPoints}</label> / 5</span></div>
-            <div><span>Score : <label style={styles} className={playerTempClass}>{props.playerPoints}</label> / 5</span></div>
+            <div>
+                <span>Score : <label
+                    style={styles}
+                    className={botTempClass}>
+                    {props.botPoints}
+                </label> / 5</span>
+            </div>
+            <div>
+                <span>Score : <label
+                    style={styles}
+                    className={playerTempClass}>
+                    {props.playerPoints}
+                </label> / 5</span>
+            </div>
         </div>
     );
 }

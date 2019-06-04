@@ -4,7 +4,8 @@ import Swal from 'sweetalert2'
 import PlayArea from './Components/PlayArea/PlayArea';
 import UserControls from './Components/UserControls/UserControls';
 import ScoreArea from './Components/ScoreArea/ScoreArea';
-import img from './assets/images/nyan-cat.gif'
+import img from './assets/images/nyan-cat.gif';
+import Footer from './Components/Footer/Footer';
 
 import './App.css';
 
@@ -21,7 +22,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    setTimeout(()=>{ this.checkClose() }, 2000);
+    setTimeout(()=>{ this.checkClose() }, 3000);
   }
 
   userControlClickHandler = (value) => {
@@ -115,15 +116,13 @@ class App extends Component {
     return (
       <div className="App">
         <span style={{
-          color: "white",
-          fontWeight: "300",
-          background: "linear-gradient(rgb(0, 0, 0) 0%, rgb(30, 27, 27) 40%, rgb(0, 0, 0) 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%)",
-          backgroundBlendMode: "multiply",
+          fontWeight: "500",
           display: "block",
           padding: "15px 0px",
-          fontSize: "30px",
-          boxShadow: "0 0 5px black"
-        }}>Rock - Paper - Scissor</span>
+          fontSize: "25px",
+          boxShadow: "0 0 5px black",
+          textShadow: "rgba(0, 0, 0, 0.22) 7px -2px 6px"
+        }}>ROCK - PAPER - SCISSOR</span>
         <ScoreArea
           botPoints={this.state.botScore}
           playerPoints={this.state.playerScore}
@@ -138,6 +137,7 @@ class App extends Component {
           <UserControls value="Paper" clicked={this.userControlClickHandler} />
           <UserControls value="Scissor" clicked={this.userControlClickHandler} />
         </div>
+        <Footer/>
       </div>
     );
   }

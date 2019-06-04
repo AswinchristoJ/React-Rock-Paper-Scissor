@@ -6,7 +6,7 @@ const playArea = (props) =>{
     return(
         <div style={{
             display:"flex",
-            height:"40vh",
+            height:"30vh",
             alignItems:"flex-start",
             justifyContent:"space-around"
         }}>
