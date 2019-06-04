@@ -20,8 +20,8 @@ class App extends Component {
     player: 'playerRock',
   }
 
-  componentDidUpdate(){
-    this.checkClose()
+  componentDidUpdate() {
+    setTimeout(()=>{ this.checkClose() }, 2000);
   }
 
   userControlClickHandler = (value) => {
@@ -92,7 +92,7 @@ class App extends Component {
     }
   }
 
-  close(closeText){
+  close(closeText) {
     Swal.fire({
       title: closeText,
       animation: true,
@@ -114,7 +114,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h3>Rock-Paper-Scissor</h3>
+        <span style={{
+          color: "white",
+          fontWeight: "300",
+          background: "linear-gradient(rgb(0, 0, 0) 0%, rgb(30, 27, 27) 40%, rgb(0, 0, 0) 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%)",
+          backgroundBlendMode: "multiply",
+          display: "block",
+          padding: "15px 0px",
+          fontSize: "30px",
+          boxShadow: "0 0 5px black"
+        }}>Rock - Paper - Scissor</span>
         <ScoreArea
           botPoints={this.state.botScore}
           playerPoints={this.state.playerScore}

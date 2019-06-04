@@ -30,8 +30,7 @@ const handHolder = (props) => {
 
     return (
         <div style={{
-            height: "5rem",
-            width: "5rem",
+            width: "30vw",
         }} >
         <div style={{
             margin:"20px",
@@ -39,7 +38,7 @@ const handHolder = (props) => {
         }}>{props.header}</div>
             <img className={tempClassName} src={images[props.hand]} alt={props.hand} style={{
                 objectFit: "scale-down",
-                height: "inherit"
+                width: "inherit"
             }} />
         </div>
     );
