@@ -12,7 +12,7 @@
     "service-worker.js": "/service-worker.js",
     "static/css/main.3d8bb6a7.chunk.css.map": "/static/css/main.3d8bb6a7.chunk.css.map",
     "static/media/botPaper.png": "/static/media/botPaper.f13472d6.png",
-    "static/media/botRock.png": "/static/media/botRock.697f18ae.png",
+    "static/media/botRock.png": "https://aswinchristoj.github.io/React-Rock-Paper-Scissor/static/media/botRock.697f18ae.png",
     "static/media/botScissor.png": "/static/media/botScissor.98de83ea.png",
     "static/media/nyan-cat.gif": "/static/media/nyan-cat.9871e996.gif",
     "static/media/playerPaper.png": "/static/media/playerPaper.2e9d9c69.png",
