@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d8bb6a7.chunk.css",
+    "main.js": "/static/js/main.b7189e79.chunk.js",
+    "main.js.map": "/static/js/main.b7189e79.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.30403b4f.chunk.js": "/static/js/2.30403b4f.chunk.js",
+    "static/js/2.30403b4f.chunk.js.map": "/static/js/2.30403b4f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2d54113932f26d20437badbeb3e8fe04.js": "/precache-manifest.2d54113932f26d20437badbeb3e8fe04.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3d8bb6a7.chunk.css.map": "/static/css/main.3d8bb6a7.chunk.css.map",
+    "static/media/botPaper.png": "/static/media/botPaper.f13472d6.png",
+    "static/media/botRock.png": "/static/media/botRock.697f18ae.png",
+    "static/media/botScissor.png": "/static/media/botScissor.98de83ea.png",
+    "static/media/nyan-cat.gif": "/static/media/nyan-cat.9871e996.gif",
+    "static/media/playerPaper.png": "/static/media/playerPaper.2e9d9c69.png",
+    "static/media/playerRock.png": "/static/media/playerRock.6dd82a39.png",
+    "static/media/playerScissor.png": "/static/media/playerScissor.1ff1e694.png"
+  }
+}
