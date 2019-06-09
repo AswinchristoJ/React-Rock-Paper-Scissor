@@ -25,7 +25,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "697f18ae4c61e449000ccea82cde7518",
-    "url": "/static/media/botRock.697f18ae.png"
+    "url": "https://aswinchristoj.github.io/React-Rock-Paper-Scissor/static/media/botRock.697f18ae.png"
   },
   {
     "revision": "98de83ead69f9ad1cb49929935f5421f",
